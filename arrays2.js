@@ -5,10 +5,13 @@ function isArrayLengthOdd(numbers) {
 function isArrayLengthEven(numbers) {
   return numbers.length % 2 == 0;
 }
-//use slice
+
+//using slice
 function addLailaToArray(instructors) {
-  instructors.push("Laila");
-  return instructors;
+  const laila = [];
+  laila.push(instructors.slice(0, instructors.length));
+  laila.push("Laila");
+  return laila;
 }
 
 function eliminateTeam(teams) {
